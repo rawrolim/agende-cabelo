@@ -1,0 +1,6 @@
+CREATE TABLE barbearia_servico (
+    id SERIAL PRIMARY KEY,
+    barbearia_id INT NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    FOREIGN KEY (barbearia_id) REFERENCES barbearia(id) ON DELETE CASCADE
+);
