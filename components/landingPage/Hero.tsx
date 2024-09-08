@@ -1,6 +1,7 @@
 "use client"
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { FaPlus, FaSearch } from 'react-icons/fa';
 
 const Hero = () => {
     const roter = useRouter();
@@ -11,8 +12,8 @@ const Hero = () => {
                 <h1 className="display-4">Encontre as Melhores Barbearias na Região dos Lagos</h1>
                 <p className="lead">O serviço definitivo para quem procura qualidade e estilo.</p>
                 <div className='btn-group gap-2'>
-                    <a onClick={()=>roter.push("/barbeiros")} className="btn btn-light btn-lg">Procurar barbearias</a>
-                    <a onClick={()=>roter.push("/cadastro")} className="btn btn-light btn-lg">Cadastrar barbearia</a>
+                    <a onClick={()=>roter.push("/barbeiros")} className="btn btn-light btn-lg"><FaSearch /> Procurar barbearias</a>
+                    <a onClick={()=>roter.push("/cadastro")} className="btn btn-light btn-lg"><FaPlus /> Cadastrar barbearia</a>
                 </div>
             </div>
         </div>

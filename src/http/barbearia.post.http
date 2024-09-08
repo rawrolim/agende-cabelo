@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/barbearia
+
+{
+    "nome": "teste1",
+    "localizacao": "teste2",
+    "foto_local": "teste3",
+    "email": "teste4",
+    "senha": "teste5",
+    "telefone": "teste6",
+    "logo": "teste7",
+    "servicos": [
+        "Cabelo na tesoura",
+        "Cabela na máquina"
+    ]
+}
